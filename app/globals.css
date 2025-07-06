@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+
+@layer utilities {
+  .animate-slide-right {
+    animation: slideRight 6s linear infinite;
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
