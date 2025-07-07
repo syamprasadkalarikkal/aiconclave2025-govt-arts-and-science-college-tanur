@@ -4,7 +4,7 @@ import Image from 'next/image';
 const PosterSlider = () => {
   const posters = [
     "/images/ai2.jpeg",
-    "/images/new.jpeg",
+    "/images/debugging.jpeg",
     "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop",
     "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"

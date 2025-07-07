@@ -46,20 +46,20 @@ export default function Hero() {
         backgroundImage: "url('/images/ai-updated.jpg')",
       }}
     >
-      {/* Top Right Logos */}
-      <div className="absolute top-16 right-4 flex space-x-1 z-20">
-        <div className="bg-white rounded-lg  h-15 w-15 shadow-lg">
+      {/* Top Right Logos - Fixed positioning */}
+      <div className="absolute top-20 right-4 sm:top-24 sm:right-6 md:top-28 md:right-8 flex space-x-2 z-20">
+        <div className="bg-white rounded-lg shadow-lg">
           <img 
             src="/images/resa.png" 
             alt="Logo 1" 
-            className="h-15 w-15 object-contain"
+            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain p-1"
           />
         </div>
-        <div className="bg-white rounded-lg h-15 w-15 shadow-lg">
+        <div className="bg-white rounded-lg shadow-lg">
           <img 
             src="/images/chmkm.png" 
             alt="Logo 2" 
-            className="h-15 w-15 object-contain"
+            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain p-1"
           />
         </div>
       </div>
@@ -71,10 +71,10 @@ export default function Hero() {
         <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse" style={{animationDelay: '4s'}}></div>
       </div>
       
-      <div className="container mx-auto px-4 flex items-center justify-center min-h-screen relative z-10">
-        <div className="text-center max-w-4xl">
+      <div className="container mx-auto px-4 flex items-end justify-center min-h-screen relative z-10">
+        <div className="text-center max-w-4xl pb-2 mb-2 w-full px-2 sm:px-4">
           {/* Countdown Timer */}
-          <div className="mb-8">
+          <div className="mb-12">
             <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm text-white px-6 py-4 rounded-2xl mb-6 border border-white border-opacity-30">
               <div className="text-sm font-medium mb-2 text-black">Event Starts In</div>
               <div className="flex justify-center space-x-4">
@@ -102,27 +102,27 @@ export default function Hero() {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 md:mb-8 leading-tight">
             AI Conclave
-            <span className="block text-4xl md:text-6xl bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="block text-3xl sm:text-4xl md:text-6xl bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
               Kerala 2025
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-white max-w-2xl mx-auto bold">
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 md:mb-12 text-white max-w-2xl mx-auto bold">
             Empowering the Future with Artificial Intelligence - Where Innovation Meets Intelligence
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
             <button
               onClick={() => scrollToSection('#register')}
-              className="bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 font-bold px-8 py-4 rounded-full shadow-2xl hover:from-yellow-300 hover:to-orange-300 transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-2xl hover:from-yellow-300 hover:to-orange-300 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
               Register Now - Early Bird
             </button>
             <button
               onClick={() => scrollToSection('#about')}
-              className="border-2 border-white text-white font-semibold px-8 py-4 rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300"
+              className="border-2 border-white text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 text-sm sm:text-base"
             >
               Learn More
             </button>

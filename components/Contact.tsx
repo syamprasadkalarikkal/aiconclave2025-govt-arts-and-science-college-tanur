@@ -2,7 +2,7 @@ import { MapPin, Mail, Phone, Instagram } from "lucide-react";
 
 export default function Contact() {
   const handleCall = (phoneNumber: string) => {
-    // This will work on mobile devices that support calling
+    
     window.location.href = `tel:${phoneNumber}`;
   };
 

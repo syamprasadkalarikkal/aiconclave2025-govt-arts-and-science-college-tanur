@@ -12,7 +12,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-xl">AI</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">AI Conclave Kerala</h3>
+                <h3 className="text-xl font-bold">AI Conclave </h3>
                 <p className="text-gray-400 text-sm">2025</p>
               </div>
             </div>

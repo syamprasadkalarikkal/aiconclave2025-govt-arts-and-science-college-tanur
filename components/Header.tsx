@@ -51,7 +51,7 @@ export default function Header() {
                   isScrolled ? "text-gray-800" : "text-white"
                 }`}
               >
-                AI Conclave Kerala
+                AI Conclave 
               </h1>
               <p
                 className={`text-sm ${
