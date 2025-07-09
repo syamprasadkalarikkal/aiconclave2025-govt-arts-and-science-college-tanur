@@ -23,36 +23,50 @@ export default function Agenda() {
                 <div className="text-indigo-600 font-bold min-w-0 flex-shrink-0">09:00 AM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Registration & Welcome</h4>
-                  <p className="text-gray-600 text-sm">Coffee & snacks</p>
+                  <p className="text-gray-600 text-sm">Coffee to start the day</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-purple-50 rounded-lg">
                 <div className="text-purple-600 font-bold min-w-0 flex-shrink-0">10:00 AM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Opening Ceremony</h4>
-                  <p className="text-gray-600 text-sm">Speaches</p>
+                  <p className="text-gray-600 text-sm">	Inspiring speeches to kick off the event</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
+                <div className="text-gray-600 font-bold min-w-0 flex-shrink-0">11:00 AM</div>
+                <div>
+                  <h4 className="font-semibold text-gray-800">Debugging</h4>
+                  <p className="text-gray-600 text-sm">	C Language challenge for sharp minds</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4 p-4 bg-pink-50 rounded-lg">
+                <div className="text-pink-600 font-bold min-w-0 flex-shrink-0">11:00 AM</div>
+                <div>
+                  <h4 className="font-semibold text-gray-800">Idea Pitching</h4>
+                  <p className="text-gray-600 text-sm">	Showcase your creative tech concepts</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4 p-4 bg-indigo-50 rounded-lg">
-                <div className="text-indigo-600 font-bold min-w-0 flex-shrink-0">12:00 PM</div>
+              <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-lg">
+                <div className="text-green-600 font-bold min-w-0 flex-shrink-0">12:00 PM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Panel Discussion</h4>
                   <p className="text-gray-600 text-sm">Role of AI in combating fake news and deepfakes</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-lg">
-                <div className="text-green-600 font-bold min-w-0 flex-shrink-0">12:00 PM</div>
+              <div className="flex items-start space-x-4 p-4 bg-purple-50 rounded-lg">
+                <div className="text-purple-600 font-bold min-w-0 flex-shrink-0">12:00 PM</div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Escape from Room</h4>
-                  <p className="text-gray-600 text-sm">Team game</p>
+                  <h4 className="font-semibold text-gray-800">PUBG</h4>
+                  <p className="text-gray-600 text-sm">Mobile gaming showdown begins</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-gray-100 rounded-lg">
                 <div className="text-gray-600 font-bold min-w-0 flex-shrink-0">01:00 PM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Lunch Break</h4>
-                  <p className="text-gray-600 text-sm">Networking lunch</p>
+                  <p className="text-gray-600 text-sm">Networking lunch with fellow attendees</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-indigo-50 rounded-lg">
@@ -66,7 +80,7 @@ export default function Agenda() {
                 <div className="text-pink-600 font-bold min-w-0 flex-shrink-0">02:30 PM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Panel Discussion</h4>
-                  <p className="text-gray-600 text-sm">Introduction to Machine Learning</p>
+                  <p className="text-gray-600 text-sm">Chalkboard to Chatbot</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-lg">
@@ -94,38 +108,45 @@ export default function Agenda() {
             </h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-4 p-4 bg-pink-50 rounded-lg">
-                <div className="text-pink-600 font-bold min-w-0 flex-shrink-0">08:30 AM</div>
+                <div className="text-pink-600 font-bold min-w-0 flex-shrink-0">08:00 AM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Breakfast</h4>
                   <p className="text-gray-600 text-sm">tea time</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-purple-50 rounded-lg">
-                <div className="text-purple-600 font-bold min-w-0 flex-shrink-0">09:30 AM</div>
+                <div className="text-purple-600 font-bold min-w-0 flex-shrink-0">09:00 AM</div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Debugging</h4>
-                  <p className="text-gray-600 text-sm">C Language</p>
+                  <h4 className="font-semibold text-gray-800">Treasure Hunt</h4>
+                  <p className="text-gray-600 text-sm">	Solve clues & race to the finish</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
-                <div className="text-gray-600 font-bold min-w-0 flex-shrink-0">10:00 AM</div>
+                <div className="text-gray-600 font-bold min-w-0 flex-shrink-0">10:30 AM</div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Idea Pitching</h4>
-                  <p className="text-gray-600 text-sm">Creative Concepts</p>
+                  <h4 className="font-semibold text-gray-800">Panel Discussion</h4>
+                  <p className="text-gray-600 text-sm">	Future and Ethics of AI</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-lg">
-                <div className="text-green-600 font-bold min-w-0 flex-shrink-0">10:00 AM</div>
+                <div className="text-green-600 font-bold min-w-0 flex-shrink-0">10:30 AM</div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">E Games</h4>
-                  <p className="text-gray-600 text-sm">e Football,Free Fire,PUBG</p>
+                  <h4 className="font-semibold text-gray-800">Workshop</h4>
+                  <p className="text-gray-600 text-sm">Exploritary Data Analytics</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4 p-4 bg-red-50 rounded-lg">
+                <div className="text-red-600 font-bold min-w-0 flex-shrink-0">11:30 AM</div>
+                <div>
+                  <h4 className="font-semibold text-gray-800">Speed Typing</h4>
+                  <p className="text-gray-600 text-sm">Showcase your lighting fast typing skill</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-pink-50 rounded-lg">
-                <div className="text-pink-600 font-bold min-w-0 flex-shrink-0">10:30 AM</div>
+                <div className="text-pink-600 font-bold min-w-0 flex-shrink-0">12:00 PM</div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Workshop</h4>
-                  <p className="text-gray-600 text-sm">AI tools for smart learning</p>
+                  <h4 className="font-semibold text-gray-800">E Football</h4>
+                  <p className="text-gray-600 text-sm">Competitive matches on console</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-indigo-50 rounded-lg">
@@ -139,11 +160,11 @@ export default function Agenda() {
                 <div className="text-gray-600 font-bold min-w-0 flex-shrink-0">01:00 PM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Lunch </h4>
-                  <p className="text-gray-600 text-sm">Final networking session</p>
+                  <p className="text-gray-600 text-sm">Final networking opportunity</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg">
-                <div className="text-indigo-600 font-bold min-w-0 flex-shrink-0">02:00 PM</div>
+              <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-green-50 to-green-50 rounded-lg">
+                <div className="text-green-600 font-bold min-w-0 flex-shrink-0">02:00 PM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Closing Ceremony</h4>
                   <p className="text-gray-600 text-sm">Awards & next steps</p>
@@ -154,6 +175,14 @@ export default function Agenda() {
                 <div>
                   <h4 className="font-semibold text-gray-800">Mystical Celebration</h4>
                   <p className="text-gray-600 text-sm">let&rsquo;s have a fun</p>
+
+                </div>
+              </div>
+               <div className="flex items-start space-x-4 p-4 bg-purple-50 rounded-lg">
+                <div className="text-purple-600 font-bold min-w-0 flex-shrink-0">06:00 PM</div>
+                <div>
+                  <h4 className="font-semibold text-gray-800">Flag Off</h4>
+                  <p className="text-gray-600 text-sm">👋</p>
 
                 </div>
               </div>

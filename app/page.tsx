@@ -54,11 +54,6 @@ export default function HomePage() {
         <Header />
         <Hero />
         <PosterSlider />
-        <div className="overflow-hidden">
-          <div className="whitespace-nowrap animate-marquee text-red-600 font-semibold py-10 px-4">
-            🔔 Workshop registrations are now open! Other event registrations will begin soon. Stay tuned!
-          </div>
-        </div>
         <About />
         <ChiefGuests />
         <Speaker />

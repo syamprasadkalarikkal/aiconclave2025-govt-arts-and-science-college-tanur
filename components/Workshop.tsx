@@ -5,7 +5,6 @@ import { X, Clock, Users, Calendar, MapPin, User, ChevronRight } from 'lucide-re
 export default function Workshops() {
   const [selectedWorkshop, setSelectedWorkshop] = useState<WorkshopType | null>(null);
 
-
   const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdCdAfFXdFEfBCZibZZM29Rrb79zWqYIV4QoVQD6aooEXFPmQ/viewform";
 
   const workshops = [
@@ -13,16 +12,15 @@ export default function Workshops() {
       id: 1,
       title: " Introduction to Machine Learning Tools",
       subtitle: "From Theory to Practice",
-      instructor: "Dr. Priya Sharma",
-      instructorTitle: "professor",
+      instructor: "TECHBYHEART",
       duration: "3 hours",
       capacity: "100+ participants",
       date: "july 22, 2025",
       time: "2:00 PM - 5:00 PM",
       location: "CHMKM Arts and Science College, Tanur",
-      actualPrice: "just ₹200",
+      actualPrice: "₹200",
       level: "Beginner",
-      imageUrl: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      imageUrl: "/images/workshop/workshop2.jpg",
       description: "Dive deep into machine learning concepts with hands-on coding exercises. Perfect for beginners who want to understand the fundamentals of ML algorithms and their real-world applications.",
       highlights: [
         "Apply ML theory to real-world practice",
@@ -46,36 +44,37 @@ export default function Workshops() {
     },
     {
       id: 2,
-      title: "AI Tools for Smart Learning",
-      subtitle: "Advanced AI Techniques",
-      instructor: "Prof. Rajesh Kumar",
-      instructorTitle: " Professor",
+      title: "Exploritary Data Analytics",
+      subtitle: "Data. Discovery. Decisions.",
+      instructor: "TECHBYHEART",
       duration: "3 hours",
       capacity: "100+ participants",
       date: "July 23 16, 2025",
       time: "10:00 AM - 01:00 PM",
       location: "CHMKM Arts and Science College, Tanur",
-      actualPrice: "just ₹200",
+      actualPrice: "₹200",
       level: "Beginner",
-      imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      description: "Discover how to leverage cutting-edge AI tools for smarter learning and productivity. This workshop offers practical guidance, interactive demos, and real-world applications for beginners.",
+      imageUrl: "/images/workshop/workshop1.jpg",
+      description: "Discover how to make sense of data through visual exploration and analysis. This workshop introduces key concepts and tools in data analytics, guiding beginners through practical exercises, interactive demos, and real-world examples. Learn how to uncover patterns, spot trends, and draw insights—all without needing advanced experience.",
       highlights: [
-        "Learn real applications in education and industry",
-        "Hands-on with cutting-edge AI tools and platforms",
-        "CNetwork with participants and academic leaders",
+        "Learn best practices for data storytelling and visual summaries",
+        "Understand common pitfalls in data analysis",
+        "Network with data science enthusiasts and mentors",
+        "Receive curated datasets and resource packs for continued learning"
         
       ],
       prerequisites: [
-        "Familiarity with Python programming",
-        "Basic understanding of machine learning",
+        "Basic familiarity with Python programming",
+        "Curiosity about data and problem-solving",
         "Laptop",
-        "Interest in educational technology and smart systems"
+        "No prior data science experience needed"
       ],
       whatYouLearn: [
-        "Overview of modern AI tools used in smart learning",
-        "Techniques for automating and enhancing learning processes",
-        "Building intelligent learning assistants using AI frameworks",
-        "Real-world case studies on smart education solutions"
+        "Foundations of exploratory data analysis (EDA)",
+        "How to clean, visualize, and interpret raw data",
+        "Identifying patterns, trends, and correlations in datasets",
+        "Using Python libraries like Pandas, Matplotlib, and Seaborn",
+        "Real-life case studies using public datasets"
       ]
     }
   ];
@@ -98,10 +97,7 @@ export default function Workshops() {
   const getLevelColor = (level: string) => {
     switch (level) {
       case 'Beginner': return 'bg-green-100 text-green-800';
-      case 'Intermediate': return 'bg-yellow-100 text-yellow-800';
-      case 'Advanced': return 'bg-red-100 text-red-800';
-      case 'Executive Level': return 'bg-purple-100 text-purple-800';
-      default: return 'bg-blue-100 text-blue-800';
+      default: return 'bg-gray-100 text-gray-800';
     }
   };
 
@@ -123,8 +119,8 @@ export default function Workshops() {
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8 justify-items-center max-w-4xl mx-auto">
           {workshops.map((workshop) => (
             <div key={workshop.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              {/* Workshop Image */}
-              <div className="relative h-64 bg-gradient-to-br from-indigo-200 to-purple-200 overflow-hidden">
+              {/* Workshop Image - Matched to Events Page */}
+              <div className="relative h-48 bg-gradient-to-br from-indigo-200 to-purple-200 overflow-hidden">
                 <Image
                   src={workshop.imageUrl}
                   alt={workshop.title}
@@ -152,7 +148,6 @@ export default function Workshops() {
                 {/* Price Badge with Discount */}
                 <div className="absolute top-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-full px-3 py-1">
                   <div className="flex flex-col items-center">
-                    
                     <span className="text-indigo-600 font-bold text-sm">{workshop.actualPrice}</span>
                   </div>
                 </div>
@@ -168,7 +163,6 @@ export default function Workshops() {
                   <User className="w-4 h-4 text-gray-500 mr-2" />
                   <div>
                     <p className="text-sm font-medium text-gray-800">{workshop.instructor}</p>
-                    <p className="text-xs text-gray-500">{workshop.instructorTitle}</p>
                   </div>
                 </div>
 
@@ -235,8 +229,8 @@ export default function Workshops() {
                   <div className="grid md:grid-cols-2 gap-8">
                     {/* Left Column */}
                     <div>
-                      {/* Workshop Image */}
-                      <div className="relative h-64 bg-gradient-to-br from-indigo-200 to-purple-200 rounded-xl overflow-hidden mb-6">
+                      {/* Workshop Image - Matched to Events Page */}
+                      <div className="relative h-48 bg-gradient-to-br from-indigo-200 to-purple-200 rounded-xl overflow-hidden mb-6">
                         <Image
                           src={selectedWorkshop.imageUrl}
                           alt={selectedWorkshop.title}
@@ -261,7 +255,6 @@ export default function Workshops() {
                           <User className="w-5 h-5 text-indigo-600 mr-3" />
                           <div>
                             <p className="font-medium text-gray-800">{selectedWorkshop.instructor}</p>
-                            <p className="text-sm text-gray-500">{selectedWorkshop.instructorTitle}</p>
                           </div>
                         </div>
                         <div className="flex items-center">

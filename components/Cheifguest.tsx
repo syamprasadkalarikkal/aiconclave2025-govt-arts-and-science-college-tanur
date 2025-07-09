@@ -3,17 +3,17 @@ import Image from 'next/image';
 const chiefGuests = [
   {
     name: 'Dr. R Bindu',
-    image: '/images/bindhu.jpg',
+    image: '/images/chiefguests/bindhu.jpg',
     description: 'Minister for Higher Education and Social Justice',
   },
   {
     name: 'Shri V. Abdurahiman',
-    image: '/images/minister.jpg',
+    image: '/images/chiefguests/minister.jpg',
     description: 'Minister for Sports, Wakf and Haj',
   },
   {
     name: 'Dilip K Kainikkara IAS',
-    image: '/images/dileep.jpeg',
+    image: '/images/chiefguests/dileep.jpeg',
     description: 'Sub Collector, Tirur',
   }
 ];

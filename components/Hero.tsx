@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   const [timeLeft, setTimeLeft] = useState({
@@ -46,21 +47,48 @@ export default function Hero() {
         backgroundImage: "url('/images/ai-updated.jpg')",
       }}
     >
-      {/* Top Right Logos - Fixed positioning */}
-      <div className="absolute top-20 right-4 sm:top-24 sm:right-6 md:top-28 md:right-8 flex space-x-2 z-20">
-        <div className="bg-white rounded-lg shadow-lg">
-          <img 
-            src="/images/resa.png" 
-            alt="Logo 1" 
-            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain p-1"
-          />
-        </div>
-        <div className="bg-white rounded-lg shadow-lg">
-          <img 
-            src="/images/chmkm.png" 
-            alt="Logo 2" 
-            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain p-1"
-          />
+      {/* Top Right Logos - Professional Layout */}
+      <div className="absolute top-14 right-4 sm:top-16 sm:right-6 md:top-18 md:right-8 z-20">
+        <div className="flex flex-col items-end gap-2">
+          {/* Top row - RESA and CHMKM logos */}
+          <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
+            {/* Logo 1 - 1.5cm size */}
+            <div className="flex-shrink-0 bg-white rounded-lg shadow-sm">
+              <Image 
+                src="/images/resa.png" 
+                alt="RESA Logo" 
+                width={64}
+                height={64}
+                className="h-14 w-14 object-contain p-1"
+                priority
+              />
+            </div>
+            
+            {/* Logo 2 - 1.5cm size */}
+            <div className="flex-shrink-0 bg-white rounded-lg shadow-sm">
+              <Image 
+                src="/images/chmkm.png" 
+                alt="CHMKM Logo" 
+                width={64}
+                height={64}
+                className="h-14 w-14 object-contain p-1"
+                priority
+              />
+            </div>
+          </div>
+          
+          {/* Bottom row - TechByHeart Logo spanning width of both above */}
+          <div className="flex-shrink-0 bg-white rounded-lg shadow-sm">
+            <Image 
+              src="/images/inassoc.png" 
+              alt="TechByHeart Logo" 
+              width={200}
+              height={200}
+              className="h-16 object-contain p-1"
+              style={{ width: 'calc(3.5rem + 3.5rem + 0.75rem)' }}
+              priority
+            />
+          </div>
         </div>
       </div>
 

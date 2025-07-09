@@ -7,21 +7,29 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Speakers", href: "#speakers" },
-    { name: "Schedule", href: "#agenda" },
-    { name: "Workshops", href: "#workshops" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "#home", isExternal: false },
+    { name: "About", href: "#about", isExternal: false },
+    { name: "Speakers", href: "#speakers", isExternal: false },
+    { name: "Schedule", href: "#agenda", isExternal: false },
+    { name: "Workshops", href: "#workshops", isExternal: false },
+    { name: "Contact", href: "#contact", isExternal: false },
+    { name: "Events", href: "/events", isExternal: true } // Updated to navigate to events page
   ];
 
-  function scrollToSection(href: string) {
-    const id = href.replace("#", "");
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
+  function handleNavigation(href: string, isExternal: boolean) {
+    if (isExternal) {
+      // For external links (like /events), use your router navigation
+      // Replace this with your actual routing logic
+      window.location.href = href;
+    } else {
+      // For internal anchor links, use scroll behavior
+      const id = href.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
     }
+    setIsMenuOpen(false);
   }
 
   useEffect(() => {
@@ -68,7 +76,7 @@ export default function Header() {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item.href, item.isExternal)}
                 className={`font-medium transition-colors hover:text-yellow-300 ${
                   isScrolled
                     ? "text-gray-700"
@@ -79,7 +87,7 @@ export default function Header() {
               </button>
             ))}
             <button
-              onClick={() => scrollToSection("#register")}
+              onClick={() => handleNavigation("#register", false)}
               className="bg-gradient-to-r from-yellow-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Register Now
@@ -118,14 +126,14 @@ export default function Header() {
           {navItems.map((item) => (
             <button
               key={item.name}
-              onClick={() => scrollToSection(item.href)}
+              onClick={() => handleNavigation(item.href, item.isExternal)}
               className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors"
             >
               {item.name}
             </button>
           ))}
           <button
-            onClick={() => scrollToSection("#register")}
+            onClick={() => handleNavigation("#register", false)}
             className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-yellow-700 transition-all duration-300 mt-4"
           >
             Register Now

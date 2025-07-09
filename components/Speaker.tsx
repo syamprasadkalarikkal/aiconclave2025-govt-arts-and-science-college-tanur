@@ -5,11 +5,11 @@ export default function Speaker() {
   const speakers = [
     {
       id: 1,
-      name: "Anitha K.R",
-      title: "Robotics & Medical Device Innovator",
+      name: "Dr P Sarin IAAS",
+      title: "Strategic Advisor Vijnana Keralam",
       description:
-        "Founder & COO of PhiScape Robotics Pvt. Ltd., Anitha K.R is a trailblazer in healthcare innovation, advancing medical technologies through robotics and engineering excellence.",
-      imageUrl: "/images/anitha.jpeg",
+        "Dr. P Sarin IAAS is a seasoned bureaucrat with a strong focus on innovation and governance. He currently serves as the Strategic Advisor to Vijnana Keralam, Kerala's flagship science initiative. His work bridges public policy and technology to foster a knowledge-driven future.",
+      imageUrl: "/images/speakers/sarin.jpeg",
     },
     {
       id: 2,
@@ -17,15 +17,23 @@ export default function Speaker() {
       title: "Associate Professor, University of Calicut",
       description:
         "Dr. Lajish is renowned for his expertise in Computational Intelligence and Indian Language Technology. His accolades include Tata Innovista and Dr. APJ Abdul Kalam Lifetime Achievement Award.",
-      imageUrl: "/images/lajish.jpeg",
+      imageUrl: "/images/speakers/lajeesh.jpeg",
     },
     {
       id: 3,
-      name: "Dr P Sarin IAAS",
-      title: "Strategic Advisor Vijnana Keralam",
+      name: "Anitha K.R",
+      title: "Robotics & Medical Device Innovator",
       description:
-        "Dr. P Sarin IAAS is a seasoned bureaucrat with a strong focus on innovation and governance. He currently serves as the Strategic Advisor to Vijnana Keralam, Kerala's flagship science initiative. His work bridges public policy and technology to foster a knowledge-driven future.",
-      imageUrl: "/images/sarin.jpeg",
+        "Founder & COO of PhiScape Robotics Pvt. Ltd., Anitha K.R is a trailblazer in healthcare innovation, advancing medical technologies through robotics and engineering excellence.",
+      imageUrl: "/images/speakers/anitha.jpeg",
+    },
+    {
+      id: 4,
+      name: "Shibili Rahiman Kp",
+      title: "Founder and Chairman Royal Assets & Companies",
+      description:
+        "Shibili Rahiman Kp is the Founder and Chairman of Royal Assets & Companies, a visionary enterprise committed to excellence in real estate, investment, and diversified business solutions. Under his leadership, the company fosters innovation and sustainable growth.",
+      imageUrl: "/images/speakers/shibili.jpeg",
     },
   ];
 

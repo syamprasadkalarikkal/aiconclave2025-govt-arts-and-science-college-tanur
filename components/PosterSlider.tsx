@@ -2,12 +2,18 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 
 const PosterSlider = () => {
+  
   const posters = [
-    "/images/ai2.jpeg",
-    "/images/debugging.jpeg",
-    "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+    "/images/events/ai.jpg",
+    "/images/workshop/workshop2.jpg",
+    "/images/workshop/workshop1.jpg",
+    "/images/events/trea.jpg",
+    "/images/events/esc.jpg",
+    "/images/events/pubg (Copy).jpg",
+    "/images/events/EF.jpg",
+    "/images/events/idea.jpg",
+    "/images/events/debu.jpg",
+    "/images/events/typin.jpg"
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,11 +34,15 @@ const PosterSlider = () => {
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
-  const goToSlide = (index: number) => {
+  const goToSlide = (index:number) => {
     if (isTransitioning || index === currentSlide) return;
     setIsTransitioning(true);
     setCurrentSlide(index);
     setTimeout(() => setIsTransitioning(false), 500);
+  };
+
+  const handlePosterClick = () => {
+    window.location.href = '/events';
   };
 
   useEffect(() => {
@@ -76,16 +86,23 @@ const PosterSlider = () => {
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
                 {posters.map((poster, index) => (
-                  <div key={index} className="relative w-full flex-shrink-0 h-full">
+                  <div 
+                    key={index} 
+                    className="relative w-full flex-shrink-0 h-full cursor-pointer group"
+                    onClick={handlePosterClick}
+                  >
                     <Image
                       src={poster}
                       alt={`Event poster ${index + 1}`}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                       loading={index === 0 ? "eager" : "lazy"}
                       sizes="(max-width: 768px) 100vw, 800px"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                    
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
                   </div>
                 ))}
               </div>
@@ -95,7 +112,7 @@ const PosterSlider = () => {
             <button
               onClick={prevSlide}
               disabled={isTransitioning}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm z-10"
               aria-label="Previous"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -106,7 +123,7 @@ const PosterSlider = () => {
             <button
               onClick={nextSlide}
               disabled={isTransitioning}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm z-10"
               aria-label="Next"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
