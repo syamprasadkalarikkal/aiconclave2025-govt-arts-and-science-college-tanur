@@ -29,7 +29,7 @@ export default function Footer() {
               <li>July 22-23, 2025</li>
               <li>CHMKM Govt Arts and Science College, Tanur</li>
               <li>Malappuram, Kerala</li>
-              <li>500+ Participants</li>
+              <li>1000+ Participants</li>
               <li>2 Days of Innovation</li>
             </ul>
           </div>
