@@ -9,74 +9,77 @@ export default function Workshops() {
 
   const workshops = [
     {
-      id: 1,
-      title: " Introduction to Machine Learning Tools",
-      subtitle: "From Theory to Practice",
-      instructor: "TECHBYHEART",
-      duration: "3 hours",
-      capacity: "100+ participants",
-      date: "july 22, 2025",
-      time: "2:00 PM - 5:00 PM",
-      location: "CHMKM Arts and Science College, Tanur",
-      actualPrice: "₹200",
-      level: "Beginner",
-      imageUrl: "/images/workshop/workshop2.jpg",
-      description: "Dive deep into machine learning concepts with hands-on coding exercises. Perfect for beginners who want to understand the fundamentals of ML algorithms and their real-world applications.",
-      highlights: [
-        "Apply ML theory to real-world practice",
-        "Explore interactive tools for model development",
-        "Real-world case studies and projects",
-        "Interactive Q&A sessions",
-        "TNetwork with 100+ participants in a live session"
-      ],
-      prerequisites: [
-        "Basic Python programming knowledge",
-        "Understanding of statistics (helpful but not required)",
-        "Interest in data science or machine learning",
-        "Laptop with internet access and Python installed"
-      ],
-      whatYouLearn: [
-        "Overview of machine learning workflows and tools",
-        "Practical use of tools like scikit-learn and Jupyter",
-        "Model evaluation and validation techniques",
-        "How to build your first end-to-end ML model"
-      ]
-    },
-    {
-      id: 2,
-      title: "Exploritary Data Analytics",
-      subtitle: "Data. Discovery. Decisions.",
-      instructor: "TECHBYHEART",
-      duration: "3 hours",
-      capacity: "100+ participants",
-      date: "July 23 16, 2025",
-      time: "10:00 AM - 01:00 PM",
-      location: "CHMKM Arts and Science College, Tanur",
-      actualPrice: "₹200",
-      level: "Beginner",
-      imageUrl: "/images/workshop/workshop1.jpg",
-      description: "Discover how to make sense of data through visual exploration and analysis. This workshop introduces key concepts and tools in data analytics, guiding beginners through practical exercises, interactive demos, and real-world examples. Learn how to uncover patterns, spot trends, and draw insights—all without needing advanced experience.",
-      highlights: [
-        "Learn best practices for data storytelling and visual summaries",
-        "Understand common pitfalls in data analysis",
-        "Network with data science enthusiasts and mentors",
-        "Receive curated datasets and resource packs for continued learning"
-        
-      ],
-      prerequisites: [
-        "Basic familiarity with Python programming",
-        "Curiosity about data and problem-solving",
-        "Laptop",
-        "No prior data science experience needed"
-      ],
-      whatYouLearn: [
-        "Foundations of exploratory data analysis (EDA)",
-        "How to clean, visualize, and interpret raw data",
-        "Identifying patterns, trends, and correlations in datasets",
-        "Using Python libraries like Pandas, Matplotlib, and Seaborn",
-        "Real-life case studies using public datasets"
-      ]
-    }
+  id: 1,
+  title: "From Scratch to Prediction: Building and Fine-Tuning AI Models",
+  subtitle: "Session 1: Build an AI Model from Scratch, Fine-Tune, and Predict",
+  instructor: "TECHBYHEART",
+  duration: "3 hours",
+  capacity: "100+ participants",
+  date: "July 22, 2025",
+  time: "2:00 PM - 5:00 PM",
+  location: "CHMKM Arts and Science College, Tanur",
+  actualPrice: "₹200",
+  level: "Beginner",
+  imageUrl: "/images/workshop/workshop2.jpg",
+  description: "Learn the full lifecycle of building an AI model from the ground up. This hands-on session covers everything from data preprocessing to model deployment, ideal for beginners eager to explore real-world AI applications.",
+  highlights: [
+    "Understand the complete AI model development pipeline",
+    "Hands-on model building and fine-tuning",
+    "Use real-world datasets for practical learning",
+    "Interactive Q&A and mentoring session",
+    "Network with 100+ participants and industry mentors"
+  ],
+  prerequisites: [
+    "Basic Python programming knowledge",
+    "Familiarity with machine learning concepts is helpful but not mandatory",
+    "Laptop with internet access and Python installed",
+    "Interest in AI, data science, or model development"
+  ],
+  whatYouLearn: [
+    "End-to-end AI model development workflow",
+    "Build machine/deep learning models from scratch",
+    "Fine-tune models to improve accuracy",
+    "Implement prediction logic for unseen/test data",
+    "Evaluate and validate your AI model effectively"
+  ]
+},
+
+   {
+  id: 2,
+  title: "Business-Driven Data Analysis: Foundations for Data Science",
+  subtitle: "Session 2: Introduction to Data Analysis from a Business Perspective",
+  instructor: "TECHBYHEART",
+  duration: "3 hours",
+  capacity: "100+ participants",
+  date: "July 23, 2025",
+  time: "10:00 AM - 01:00 PM",
+  location: "CHMKM Arts and Science College, Tanur",
+  actualPrice: "₹200",
+  level: "Beginner",
+  imageUrl: "/images/workshop/workshop1.jpg",
+  description: "Step into the world of business-focused data analysis. This beginner-friendly session helps participants understand how to extract, clean, and explore data to uncover insights that drive real-world business decisions. Learn how to interpret trends, visualize data, and communicate findings using Python-based tools.",
+  highlights: [
+    "Explore how businesses use data to solve real problems",
+    "Hands-on analysis with real-world datasets",
+    "Interactive demonstrations with EDA tools",
+    "Learn to communicate data findings clearly and effectively",
+    "Network with peers and industry practitioners"
+  ],
+  prerequisites: [
+    "Basic familiarity with Python programming",
+    "Interest in business, analysis, or data-driven decision-making",
+    "Laptop with Python and required libraries installed",
+    "No prior data science experience needed"
+  ],
+  whatYouLearn: [
+    "The role of data analysis in business decision-making",
+    "How to extract, clean, and explore datasets",
+    "Perform exploratory data analysis (EDA)",
+    "Visualize trends and insights using Pandas, Matplotlib, and Seaborn",
+    "Present clear, data-driven insights to a non-technical audience"
+  ]
+}
+
   ];
 
   type WorkshopType = typeof workshops[number];

@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-
 import Header from "@/components/Header";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
@@ -32,9 +31,9 @@ export default function HomePage() {
         />
         <meta
           property="og:image"
-          content="https://aiconclave.gctanur.in/images/ai-updated.jpg"
+          content="https://aiconclave2025.gctanur.in/images/ai-updated.jpg"
         />
-        <meta property="og:url" content="https://aiconclave.gctanur.in/" />
+        <meta property="og:url" content="https://aiconclave2025.gctanur.in/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
@@ -46,7 +45,7 @@ export default function HomePage() {
         />
         <meta
           name="twitter:image"
-          content="https://aiconclave.gctanur.in/images/ai-updated.jpg"
+          content="https://aiconclave2025.gctanur.in/images/ai-updated.jpg"
         />
       </Head>
 
