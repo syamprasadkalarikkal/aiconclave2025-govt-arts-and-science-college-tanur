@@ -11,6 +11,7 @@ const PosterSlider = () => {
     "/images/events/esc.jpg",
     "/images/events/pubg (Copy).jpg",
     "/images/events/EF.jpg",
+    "/images/events/FIREFREE.jpg",
     "/images/events/idea.jpg",
     "/images/events/debu.jpg",
     "/images/events/typin.jpg"

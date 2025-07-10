@@ -64,7 +64,7 @@ export default function EventsPage() {
     {
       id: 3,
       date: "July 22, 2025",
-      time: "4:30 PM - 6:30 PM",
+      time: "4:30 PM ",
       location: "anounced later",
       description: "Trapped in a themed room! Solve puzzles, unlock clues, and escape before time runs out. 15 min per group.",
       registrationLink: "https://forms.gle/i2nGSfQs3DUsGgzg8",
@@ -148,6 +148,25 @@ export default function EventsPage() {
         "All players must use their own PUBG Mobile accounts and devices",
         "No cheating or hacks allowed"
 
+      ]
+    },
+    {
+      id: 8,
+      date: "July 23, 2025",
+      time: "11:30 AM",
+      location: "anounced later",
+      description: "Step into the ultimate battleground with your squad in this intense 4v4 Free Fire Room Knockout Tournament!",
+      registrationLink: "https://forms.gle/J4xgF2RTUPe4emE37",
+      image: "/events/FIREFREE.jpg",
+      category: "Adventure",
+      price: "₹200",
+      prize: " ₹1000 for winning squad",
+      rules: [
+        "Groups of 4",
+        "All participants must have a mobile device that supports Free Fire",
+        "No cheating or hacks allowed",
+        "knockout format"
+        
       ]
     },
   ];

@@ -76,6 +76,13 @@ export default function Agenda() {
                   <p className="text-gray-600 text-sm">Introduction to Machine Learning</p>
                 </div>
               </div>
+              <div className="flex items-start space-x-4 p-4 bg-red-50 rounded-lg">
+                <div className="text-red-600 font-bold min-w-0 flex-shrink-0">02:30 PM</div>
+                <div>
+                  <h4 className="font-semibold text-gray-800">Escape from Room</h4>
+                  <p className="text-gray-600 text-sm">Chalkboard to Chatbot</p>
+                </div>
+              </div>
               <div className="flex items-start space-x-4 p-4 bg-pink-50 rounded-lg">
                 <div className="text-pink-600 font-bold min-w-0 flex-shrink-0">02:30 PM</div>
                 <div>
@@ -140,6 +147,13 @@ export default function Agenda() {
                 <div>
                   <h4 className="font-semibold text-gray-800">Speed Typing</h4>
                   <p className="text-gray-600 text-sm">Showcase your lighting fast typing skill</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4 p-4 bg-purple-50 rounded-lg">
+                <div className="text-purple-600 font-bold min-w-0 flex-shrink-0">11:30 AM</div>
+                <div>
+                  <h4 className="font-semibold text-gray-800">Free Fire</h4>
+                  <p className="text-gray-600 text-sm">Prove Your Power on the Field</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 p-4 bg-pink-50 rounded-lg">
