@@ -1,0 +1,22 @@
+{
+  "name": "AI Conclave 2025",
+  "short_name": "AIConclave",
+  "description": "Join us at the AI Conclave 2025 hosted by Govt. Arts and Science College, Tanur.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/images/ai-updated.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
