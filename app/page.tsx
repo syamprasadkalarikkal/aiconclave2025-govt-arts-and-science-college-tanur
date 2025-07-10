@@ -32,7 +32,7 @@ export default function HomePage() {
         />
         <meta
           property="og:image"
-          content="https://aiconclave.gctanur.in/"
+          content="https://aiconclave.gctanur.in/images/ai-updated.jpg"
         />
         <meta property="og:url" content="https://aiconclave.gctanur.in/" />
         <meta property="og:type" content="website" />
@@ -46,7 +46,7 @@ export default function HomePage() {
         />
         <meta
           name="twitter:image"
-          content="https://aiconclave.gctanur.in/"
+          content="https://aiconclave.gctanur.in/images/ai-updated.jpg"
         />
       </Head>
 
