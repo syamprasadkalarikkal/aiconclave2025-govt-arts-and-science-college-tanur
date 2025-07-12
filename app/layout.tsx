@@ -32,15 +32,15 @@ export const metadata: Metadata = {
     ]
   },
   
-  // Twitter
+ 
   twitter: {
     card: "summary_large_image",
     title: "AI Conclave 2025 – GCT",
     description: "Explore the future of AI and innovation at the AI Conclave 2025 in Tanur!",
-    images: ["https://aiconclave2025.gctanur.in/images/ai-updated.jpg"]
+    images: ["https://aiconclave2025.gctanur.in/images/ai-updated.jpg"],
   },
   
-  // Icons and PWA
+ 
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -87,6 +87,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="OXd5kJ4kF63c-G0j24mK1tAb9wUPe5w8-enH0VCgHAg" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
