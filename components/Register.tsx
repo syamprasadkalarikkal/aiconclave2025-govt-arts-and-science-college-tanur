@@ -1,21 +1,21 @@
 export default function Register() {
   const handleStudentRegisterClick = () => {
     window.open(
-      'https://forms.gle/hJK46LUDqCv85NFX6',
+      'https://www.commudle.com/fill-form/3612',
       '_blank'
     );
   };
 
   const handleOthersRegisterClick = () => {
     window.open(
-      'https://forms.gle/hJK46LUDqCv85NFX6',
+      'https://www.commudle.com/fill-form/3613',
       '_blank'
     );
   };
 
   const handleFreeRegisterClick = () => {
     window.open(
-      'https://forms.gle/hJK46LUDqCv85NFX6',
+      'https://www.commudle.com/fill-form/3614',
       '_blank'
     );
   };

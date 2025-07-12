@@ -137,7 +137,7 @@ export default function EventsPage() {
       time: "12:00 PM",
       location: "Anounced later",
       description: "Form your squad and drop into the battleground. Only one squad will survive and win the prize!",
-      registrationLink: "https://events.aiconclave.com/pubg",
+      registrationLink: "https://forms.gle/JmdAZSF2m5Kdp1bEA",
       image: "/events/pubg (Copy).jpg",
       category: "Gaming",
       price: "₹200",
