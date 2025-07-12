@@ -1,5 +1,19 @@
 export default function Register() {
-  const handleRegisterClick = () => {
+  const handleStudentRegisterClick = () => {
+    window.open(
+      'https://forms.gle/hJK46LUDqCv85NFX6',
+      '_blank'
+    );
+  };
+
+  const handleOthersRegisterClick = () => {
+    window.open(
+      'https://forms.gle/hJK46LUDqCv85NFX6',
+      '_blank'
+    );
+  };
+
+  const handleFreeRegisterClick = () => {
     window.open(
       'https://forms.gle/hJK46LUDqCv85NFX6',
       '_blank'
@@ -43,90 +57,104 @@ export default function Register() {
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
           {/* Student */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col">
             <div className="bg-gradient-to-r from-green-400 to-blue-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
               Student Offer
             </div>
             <div className="text-5xl font-bold text-green-300 mb-2">₹200</div>
-            <div className="text-gray-800 text-lg mb-6">Students</div>
-            <div className="text-left text-gray-700 space-y-3">
+            <div className="text-gray-800 text-lg mb-6 font-medium">Students</div>
+            <div className="text-left text-gray-200 space-y-3 mb-8 flex-grow">
               <div className="flex items-center">
                 <span className="text-green-400 mr-3">✓</span>
-                <span>Full conference access</span>
+                <span className="text-gray-600">Full conference access</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-400 mr-3">✓</span>
-                <span>Attend any ONE workshop</span>
+                <span className="text-gray-600">Attend any ONE workshop</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-400 mr-3">✓</span>
-                <span>Visit all other programs</span>
+                <span className="text-gray-600">Visit all other programs</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-400 mr-3">✓</span>
-                <span>Food & accommodation provided</span>
+                <span className="text-gray-600">Food & accommodation provided</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-400 mr-3">✓</span>
-                <span>Certificate of participation</span>
+                <span className="text-gray-600">Certificate of participation</span>
               </div>
               <div className="flex items-center">
                 <span className="text-green-400 mr-3">📋</span>
                 <span className="text-yellow-300">Student ID required</span>
               </div>
             </div>
+            
+            <button
+              onClick={handleStudentRegisterClick}
+              className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-3 px-6 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-50 mt-auto"
+            >
+              Register as Student
+            </button>
           </div>
 
           {/* Professional */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col">
             <div className="bg-gradient-to-r from-purple-400 to-pink-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
               Others
             </div>
             <div className="text-5xl font-bold text-purple-300 mb-2">₹300</div>
-            <div className="text-gray-800 text-lg mb-6">All Others</div>
-            <div className="text-left text-gray-700 space-y-3">
+            <div className="text-gray-800 text-lg mb-6 font-medium">All Others</div>
+            <div className="text-left text-gray-200 space-y-3 mb-8 flex-grow">
               <div className="flex items-center">
                 <span className="text-purple-400 mr-3">✓</span>
-                <span>Full conference access</span>
+                <span className="text-gray-600">Full conference access</span>
               </div>
               <div className="flex items-center">
                 <span className="text-purple-400 mr-3">✓</span>
-                <span>Attend any ONE workshop</span>
+                <span className="text-gray-600">Attend any ONE workshop</span>
               </div>
               <div className="flex items-center">
                 <span className="text-purple-400 mr-3">✓</span>
-                <span>Visit all other programs</span>
+                <span className="text-gray-600">Visit all other programs</span>
               </div>
               <div className="flex items-center">
                 <span className="text-purple-400 mr-3">✓</span>
-                <span>Food & accommodation provided</span>
+                <span className="text-gray-600">Food & accommodation provided</span>
               </div>
               <div className="flex items-center">
                 <span className="text-purple-400 mr-3">✓</span>
-                <span>Certificate of participation</span>
+                <span className="text-gray-600">Certificate of participation</span>
               </div>
             </div>
+            
+            <button
+              onClick={handleOthersRegisterClick}
+              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-opacity-50 mt-auto"
+            >
+              Register as Professional
+            </button>
           </div>
 
           {/* Free */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col">
             <div className="bg-gradient-to-r from-cyan-400 to-teal-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
               Free Entry
             </div>
             <div className="text-5xl font-bold text-cyan-300 mb-2">FREE</div>
-            <div className="text-gray-800 text-lg mb-6">Basic Access</div>
-            <div className="text-left text-gray-700 space-y-3">
+            <div className="text-gray-800 text-lg mb-6 font-medium">Basic Access</div>
+            <div className="text-left text-gray-200 space-y-3 mb-8 flex-grow">
               <div className="flex items-center">
                 <span className="text-cyan-400 mr-3">✓</span>
-                <span>Exhibition access</span>
+                <span className="text-gray-600">Exhibition access</span>
               </div>
               <div className="flex items-center">
                 <span className="text-cyan-400 mr-3">✓</span>
-                <span>Cultural events access</span>
+                <span className="text-gray-600">Cultural events access</span>
               </div>
               <div className="flex items-center">
                 <span className="text-cyan-400 mr-3">✓</span>
-                <span>Networking sessions</span>
+                <span className="text-gray-600">Networking sessions</span>
               </div>
               <div className="flex items-center">
                 <span className="text-red-400 mr-3">✗</span>
@@ -141,26 +169,14 @@ export default function Register() {
                 <span className="text-gray-400">No certificate</span>
               </div>
             </div>
+            
+            <button
+              onClick={handleFreeRegisterClick}
+              className="w-full bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-cyan-300 focus:ring-opacity-50 mt-auto"
+            >
+              Register for Free
+            </button>
           </div>
-        </div>
-
-        {/* CTA */}
-        <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-10 border border-white border-opacity-20 max-w-2xl mx-auto">
-          <h3 className="text-3xl font-bold mb-6 text-red-400">Ready to Join?</h3>
-          <p className="text-gray-700 mb-8 text-lg">
-            Click below to access our registration form and secure your spot at Kerala&apos;s most anticipated AI conference.
-          </p>
-
-          <button
-            onClick={handleRegisterClick}
-            className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 text-white font-bold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-opacity-50"
-          >
-            Register Now
-          </button>
-
-          <p className="text-sm text-gray-800 mt-6">
-            Registration closes 24 hours before the event • Payment details will be provided in the form
-          </p>
         </div>
 
         {/* Info icons */}
@@ -187,6 +203,18 @@ export default function Register() {
             </div>
             <h4 className="text-xl font-semibold mb-2">Free Programs</h4>
             <p className="text-gray-300">Exhibition and cultural events open to all</p>
+          </div>
+        </div>
+
+        {/* Additional Information */}
+        <div className="mt-16 text-center">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-2xl p-6 border border-white border-opacity-20 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-600 mb-2">
+              <span className="text-yellow-400">⏰</span> Registration closes 24 hours before the event
+            </p>
+            <p className="text-sm text-gray-600">
+              <span className="text-green-400">💳</span> Payment details will be provided in the registration form
+            </p>
           </div>
         </div>
       </div>
