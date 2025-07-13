@@ -27,13 +27,16 @@ export default function Workshops() {
     "Hands-on model building and fine-tuning",
     "Use real-world datasets for practical learning",
     "Interactive Q&A and mentoring session",
-    "Network with 100+ participants and industry mentors"
+    "Network with 100+ participants and industry mentors",
+    "Certificate of participation provided to all attendees"
+
   ],
   prerequisites: [
     "Basic Python programming knowledge",
     "Familiarity with machine learning concepts is helpful but not mandatory",
     "Laptop with internet access and Python installed",
-    "Interest in AI, data science, or model development"
+    "Interest in AI, data science, or model development",
+    
   ],
   whatYouLearn: [
     "End-to-end AI model development workflow",
@@ -63,7 +66,9 @@ export default function Workshops() {
     "Hands-on analysis with real-world datasets",
     "Interactive demonstrations with EDA tools",
     "Learn to communicate data findings clearly and effectively",
-    "Network with peers and industry practitioners"
+    "Network with peers and industry practitioners",
+    "Certificate of participation provided to all attendees"
+
   ],
   prerequisites: [
     "Basic familiarity with Python programming",
