@@ -5,7 +5,7 @@ import { X, Clock, Users, Calendar, MapPin, User, ChevronRight } from 'lucide-re
 export default function Workshops() {
   const [selectedWorkshop, setSelectedWorkshop] = useState<WorkshopType | null>(null);
 
-  const googleFormUrl = "https://www.commudle.com/fill-form/3610";
+  const googleFormUrl = "https://www.commudle.com/fill-form/3615";
 
   const workshops = [
     {

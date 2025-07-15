@@ -6,12 +6,7 @@ export default function Register() {
     );
   };
 
-  const handleOthersRegisterClick = () => {
-    window.open(
-      'https://www.commudle.com/fill-form/3616',
-      '_blank'
-    );
-  };
+ 
 
   const handleFreeRegisterClick = () => {
     window.open(
@@ -54,12 +49,12 @@ export default function Register() {
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
+        {/* Pricing Cards - Centered */}
+        <div className="flex justify-center items-stretch gap-8 mb-16 max-w-6xl mx-auto">
           {/* Student */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col w-full max-w-sm">
             <div className="bg-gradient-to-r from-green-400 to-blue-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
-              Student Offer
+              Premium
             </div>
             <div className="text-5xl font-bold text-green-300 mb-2">₹200</div>
             <div className="text-gray-800 text-lg mb-6 font-medium">Students</div>
@@ -84,60 +79,19 @@ export default function Register() {
                 <span className="text-green-400 mr-3">✓</span>
                 <span className="text-gray-600">Certificate of participation</span>
               </div>
-              <div className="flex items-center">
-                <span className="text-green-400 mr-3">📋</span>
-                <span className="text-yellow-300">Student ID required</span>
-              </div>
             </div>
             
             <button
               onClick={handleStudentRegisterClick}
               className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-3 px-6 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-50 mt-auto"
             >
-              Register as Student
+              Premium Registration
             </button>
           </div>
-
-          {/* Professional */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col">
-            <div className="bg-gradient-to-r from-purple-400 to-pink-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
-              Others
-            </div>
-            <div className="text-5xl font-bold text-purple-300 mb-2">₹300</div>
-            <div className="text-gray-800 text-lg mb-6 font-medium">All Others</div>
-            <div className="text-left text-gray-200 space-y-3 mb-8 flex-grow">
-              <div className="flex items-center">
-                <span className="text-purple-400 mr-3">✓</span>
-                <span className="text-gray-600">Full conference access</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-purple-400 mr-3">✓</span>
-                <span className="text-gray-600">Attend any ONE workshop</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-purple-400 mr-3">✓</span>
-                <span className="text-gray-600">Visit all other programs</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-purple-400 mr-3">✓</span>
-                <span className="text-gray-600">Food & accommodation provided</span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-purple-400 mr-3">✓</span>
-                <span className="text-gray-600">Certificate of participation</span>
-              </div>
-            </div>
-            
-            <button
-              onClick={handleOthersRegisterClick}
-              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-300 focus:ring-opacity-50 mt-auto"
-            >
-              Register as Professional
-            </button>
-          </div>
+         
 
           {/* Free */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col w-full max-w-sm">
             <div className="bg-gradient-to-r from-cyan-400 to-teal-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
               Free Entry
             </div>

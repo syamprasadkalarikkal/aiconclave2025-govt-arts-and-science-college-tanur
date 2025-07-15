@@ -12,6 +12,7 @@ import Workshop from "@/components/Workshop";
 import PosterSlider from "@/components/PosterSlider";
 import ChiefGuests from "@/components/Cheifguest";
 
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-gray-800 font-sans">
