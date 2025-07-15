@@ -6,8 +6,6 @@ export default function Register() {
     );
   };
 
- 
-
   const handleFreeRegisterClick = () => {
     window.open(
       'https://www.commudle.com/fill-form/3617',
@@ -49,10 +47,10 @@ export default function Register() {
           </p>
         </div>
 
-        {/* Pricing Cards - Centered */}
-        <div className="flex justify-center items-stretch gap-8 mb-16 max-w-6xl mx-auto">
+        {/* Pricing Cards - Responsive: Stack on mobile, side by side on desktop */}
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 mb-16 max-w-6xl mx-auto">
           {/* Student */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col w-full max-w-sm">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col w-full md:max-w-sm">
             <div className="bg-gradient-to-r from-green-400 to-blue-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
               Premium
             </div>
@@ -89,9 +87,8 @@ export default function Register() {
             </button>
           </div>
          
-
           {/* Free */}
-          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col w-full max-w-sm">
+          <div className="bg-white bg-opacity-10 backdrop-blur-xl rounded-3xl p-8 border border-white border-opacity-20 hover:bg-opacity-15 transition-all duration-300 hover:scale-105 flex flex-col w-full md:max-w-sm">
             <div className="bg-gradient-to-r from-cyan-400 to-teal-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
               Free Entry
             </div>
