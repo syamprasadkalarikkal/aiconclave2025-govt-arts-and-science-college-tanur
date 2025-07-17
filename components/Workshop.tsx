@@ -211,6 +211,26 @@ export default function Workshops() {
           ))}
         </div>
 
+        {/* Workshop Notice */}
+        <div className="mt-12 mb-8 flex justify-center">
+          <div className="bg-red-50 border-2 border-red-200 rounded-xl p-6 max-w-3xl mx-auto">
+            <div className="flex items-center">
+              <div className="flex-shrink-0 mr-4">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-red-600 font-bold text-sm">!</span>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-red-800 font-semibold mb-2">Important Registration Notice</h4>
+                <p className="text-red-700 text-sm leading-relaxed">
+                  The registration fee of ₹200 provides access to <strong>one workshop only</strong>. 
+                  If you wish to attend both workshops, you must complete separate registration for each workshop session.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Modal */}
         {selectedWorkshop && (
           <div className="fixed inset-0 bg-gray-200 bg-opacity-50 flex items-center justify-center z-50 p-4">
