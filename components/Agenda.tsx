@@ -101,7 +101,7 @@ export default function Agenda() {
                 <div className="text-gray-600 font-bold min-w-0 flex-shrink-0">07:00 PM</div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Dinner</h4>
-                  <p className="text-gray-600 text-sm">Biriyani</p>
+                  <p className="text-gray-600 text-sm">Curated meals to wrap up your day with delight</p>
                 </div>
               </div>
             </div>
