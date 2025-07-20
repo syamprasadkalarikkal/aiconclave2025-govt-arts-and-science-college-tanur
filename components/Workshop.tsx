@@ -4,6 +4,7 @@ import { X, Clock, Users, Calendar, MapPin, User, ChevronRight } from 'lucide-re
 
 export default function Workshops() {
   const [selectedWorkshop, setSelectedWorkshop] = useState<WorkshopType | null>(null);
+  const [showSlotFullMessage, setShowSlotFullMessage] = useState(false);
 
   const googleFormUrl = "https://www.commudle.com/fill-form/3615";
 
@@ -44,7 +45,8 @@ export default function Workshops() {
     "Fine-tune models to improve accuracy",
     "Implement prediction logic for unseen/test data",
     "Evaluate and validate your AI model effectively"
-  ]
+  ],
+  slotsFull: true
 },
 
    {
@@ -82,7 +84,8 @@ export default function Workshops() {
     "Perform exploratory data analysis (EDA)",
     "Visualize trends and insights using Pandas, Matplotlib, and Seaborn",
     "Present clear, data-driven insights to a non-technical audience"
-  ]
+  ],
+  slotsFull: false
 }
 
   ];
@@ -98,8 +101,16 @@ export default function Workshops() {
   };
 
   const handleRegistration = () => {
-    // Open Google Form in a new tab
-    window.open(googleFormUrl, '_blank');
+    if (selectedWorkshop?.slotsFull) {
+      setShowSlotFullMessage(true);
+      // Hide the message after 3 seconds
+      setTimeout(() => {
+        setShowSlotFullMessage(false);
+      }, 3000);
+    } else {
+      // Open Google Form in a new tab for workshops with available slots
+      window.open(googleFormUrl, '_blank');
+    }
   };
 
   const getLevelColor = (level: string) => {
@@ -231,6 +242,18 @@ export default function Workshops() {
           </div>
         </div>
 
+        {/* Slot Full Popup Message */}
+        {showSlotFullMessage && (
+          <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+            <div className="bg-red-500 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-2 animate-pulse">
+              <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span className="text-red-500 font-bold text-sm">!</span>
+              </div>
+              <span className="font-medium">Slots are full for Machine Learning Workshop!</span>
+            </div>
+          </div>
+        )}
+
         {/* Modal */}
         {selectedWorkshop && (
           <div className="fixed inset-0 bg-gray-200 bg-opacity-50 flex items-center justify-center z-50 p-4">
@@ -361,9 +384,13 @@ export default function Workshops() {
                     </div>
                     <button 
                       onClick={handleRegistration}
-                      className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 hover:shadow-lg"
+                      className={`font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:shadow-lg ${
+                        selectedWorkshop.slotsFull 
+                          ? 'bg-red-500 text-white hover:bg-red-600 cursor-not-allowed' 
+                          : 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700'
+                      }`}
                     >
-                      Register Now
+                      {selectedWorkshop.slotsFull ? 'Slots Full' : 'Register Now'}
                     </button>
                   </div>
                 </div>
