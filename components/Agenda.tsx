@@ -16,7 +16,7 @@ export default function Agenda() {
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <h3 className="text-2xl font-bold mb-6 text-gray-800 flex items-center">
               <Calendar className="w-6 h-6 mr-3 text-indigo-600" />
-              Day 1 - July 22, 2025
+              Day 1 - July 28, 2025
             </h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-4 p-4 bg-indigo-50 rounded-lg">
@@ -111,7 +111,7 @@ export default function Agenda() {
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <h3 className="text-2xl font-bold mb-6 text-gray-800 flex items-center">
               <Calendar className="w-6 h-6 mr-3 text-purple-600" />
-              Day 2 - July 23, 2025
+              Day 2 - July 29, 2025
             </h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-4 p-4 bg-pink-50 rounded-lg">

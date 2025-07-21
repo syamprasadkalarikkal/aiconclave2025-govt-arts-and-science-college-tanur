@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Event Info</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>July 22-23, 2025</li>
+              <li>July 28-29, 2025</li>
               <li>CHMKM Govt Arts and Science College, Tanur</li>
               <li>Malappuram, Kerala</li>
               <li>1000+ Participants</li>

@@ -13,12 +13,77 @@ import Workshop from "@/components/Workshop";
 import PosterSlider from "@/components/PosterSlider";
 import ChiefGuests from "@/components/Cheifguest";
 
+// Announcement Modal Component
+const AnnouncementModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
+      <div className="bg-white rounded-lg shadow-2xl max-w-md w-full mx-4 relative">
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors duration-200"
+          aria-label="Close announcement"
+        >
+          ×
+        </button>
+        
+        {/* Modal content */}
+        <div className="p-6 pr-12">
+          <div className="text-center">
+            {/* Round profile image */}
+            <div className="flex justify-center mb-4">
+              <img
+                src="/images/vs.avif"
+                alt="Shri V. S. Achuthanandan"
+                className="w-20 h-20 rounded-full object-cover border-4 border-gray-300 shadow-lg"
+              />
+            </div>
+            
+            <h2 className="text-xl font-bold text-red-600 mb-4">
+              IMPORTANT ANNOUNCEMENT
+            </h2>
+            
+            <div className="text-gray-800 leading-relaxed">
+              
+              <p className="mb-4">
+                <span className="font-bold">Due to the demise of former Chief Minister of Kerala, Shri V. S. Achuthanandan, the AI Conclave 2025 scheduled at CHMKM Govt. College, Tanur, has been rescheduled as a mark of respect.</span>
+              </p>
+              
+              <div className="mb-4">
+                <p className="font-semibold text-blue-700 mb-1">
+                  🗓️ New Dates: July 28 & 29, 2025
+                </p>
+                <p className="font-semibold text-green-700 mb-3">
+                  📍 Venue: Govt College, Tanur
+                </p>
+              </div>
+              
+              <p className="text-gray-700 italic">
+                We express our deepest condolences and appreciate your understanding.
+              </p>
+            </div>
+            
+            <button
+              onClick={onClose}
+              className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200"
+            >
+              Continue to Website
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Popup Advertisement Component
 const SkyfordPopup = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 max-w-sm w-full mx-4">
+    <div className="fixed bottom-4 right-4 z-40 max-w-sm w-full mx-4">
       <div 
         className="bg-white rounded-lg shadow-2xl relative overflow-hidden"
         style={{
@@ -78,16 +143,40 @@ const SkyfordPopup = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
 };
 
 export default function HomePage() {
+  const [showAnnouncement, setShowAnnouncement] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    // Show popup after a short delay when component mounts
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 1000); // 1 second delay
-
-    return () => clearTimeout(timer);
+    // Check if user has seen the announcement in this session
+    const hasSeenInSession = sessionStorage.getItem('aiConclave2025AnnouncementSeen');
+    
+    if (!hasSeenInSession) {
+      setShowAnnouncement(true);
+    } else {
+      // If announcement was already seen in this session, show Skyford popup after delay
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
   }, []);
+
+  useEffect(() => {
+    // Show Skyford popup after announcement is closed and a delay
+    if (!showAnnouncement) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 2000); // 2 second delay after announcement is closed
+
+      return () => clearTimeout(timer);
+    }
+  }, [showAnnouncement]);
+
+  const closeAnnouncement = () => {
+    setShowAnnouncement(false);
+    // Mark announcement as seen in this session only
+    sessionStorage.setItem('aiConclave2025AnnouncementSeen', 'true');
+  };
 
   const closePopup = () => {
     setShowPopup(false);
@@ -95,20 +184,28 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-white text-gray-800 font-sans">
-      <Header />
-      <Hero />
-      <PosterSlider />
-      <About />
-      <ChiefGuests />
-      <Speaker />
-      <Agenda />
-      <Workshop />
-      <Register />
-      <Contact />
-      <Footer />
+      {/* Announcement Modal - appears first */}
+      <AnnouncementModal isOpen={showAnnouncement} onClose={closeAnnouncement} />
       
-      {/* Skyford Aviation Popup */}
-      <SkyfordPopup isOpen={showPopup} onClose={closePopup} />
+      {/* Main website content - always visible unless announcement is showing */}
+      {!showAnnouncement && (
+        <>
+          <Header />
+          <Hero />
+          <PosterSlider />
+          <About />
+          <ChiefGuests />
+          <Speaker />
+          <Agenda />
+          <Workshop />
+          <Register />
+          <Contact />
+          <Footer />
+          
+          {/* Skyford Aviation Popup */}
+          <SkyfordPopup isOpen={showPopup} onClose={closePopup} />
+        </>
+      )}
     </main>
   );
 }
