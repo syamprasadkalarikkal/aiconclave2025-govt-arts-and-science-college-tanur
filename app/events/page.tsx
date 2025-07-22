@@ -29,7 +29,7 @@ export default function EventsPage() {
   const events: Event[] = [
     {
       id: 1,
-      date: "July 22, 2025",
+      date: "July 28, 2025",
       time: "11:00 AM",
       location: "annouced later",
       description: "Pitch your groundbreaking startup idea in 3 minutes to a panel of judges.Creativity and clarity win the game!",
@@ -46,7 +46,7 @@ export default function EventsPage() {
     },
     {
       id: 2,
-      date: "July 23, 2025",
+      date: "July 29, 2025",
       time: "09:00 AM",
       location: "Entire Campus",
       description: "Solve clues and race against time to uncover hidden treasures around the campus. Team up for fun!",
@@ -63,7 +63,7 @@ export default function EventsPage() {
     },
     {
       id: 3,
-      date: "July 22, 2025",
+      date: "July 28, 2025",
       time: "4:30 PM ",
       location: "anounced later",
       description: "Trapped in a themed room! Solve puzzles, unlock clues, and escape before time runs out. 15 min per group.",
@@ -80,7 +80,7 @@ export default function EventsPage() {
     },
     {
       id: 4,
-      date: "July 23, 2025",
+      date: "July 29, 2025",
       time: "11:30 Am",
       location: "Computer Lab ",
       description: "Compete to show off your typing speed and accuracy! Bring your keyboard skills to the next level.",
@@ -97,7 +97,7 @@ export default function EventsPage() {
     },
     {
       id: 5,
-      date: "July 22, 2025",
+      date: "July 28, 2025",
       time: "11:00 AM ",
       location: "Computer Lab",
       description: "Fix bugs in tricky C programs in record time. The fastest and cleanest code wins!",
@@ -114,7 +114,7 @@ export default function EventsPage() {
     },
     {
       id: 6,
-      date: "July 23, 2025",
+      date: "July 29, 2025",
       time: "12:00 PM ",
       location: "Anouced later",
       description: "Play competitive FIFA matches on PS5! Show off your dribbling, passing, and scoring skills.",
@@ -133,7 +133,7 @@ export default function EventsPage() {
     },
     {
       id: 7,
-      date: "July 22, 2025",
+      date: "July 28, 2025",
       time: "12:00 PM",
       location: "Anounced later",
       description: "Form your squad and drop into the battleground. Only one squad will survive and win the prize!",
@@ -152,7 +152,7 @@ export default function EventsPage() {
     },
     {
       id: 8,
-      date: "July 23, 2025",
+      date: "July 29, 2025",
       time: "11:30 AM",
       location: "anounced later",
       description: "Step into the ultimate battleground with your squad in this intense 4v4 Free Fire Room Knockout Tournament!",

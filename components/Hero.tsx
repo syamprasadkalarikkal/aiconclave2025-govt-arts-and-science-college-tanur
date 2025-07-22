@@ -126,7 +126,7 @@ export default function Hero() {
                   <div className="text-xs text-black">Seconds</div>
                 </div>
               </div>
-              <div className="text-xs text-black mt-2">July 22, 2025 • Kerala, India</div>
+              <div className="text-xs text-black mt-2">July 28, 2025 • Kerala, India</div>
             </div>
           </div>
 
