@@ -217,15 +217,17 @@ export default function EventsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event) => (
             <div key={event.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col h-full">
-              {/* Event Header with Background Image */}
-              <div className="relative p-6 text-white overflow-hidden h-48">
-                <div
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: `url("/images/${event.image}")` }}
-                ></div>
-                <div className="absolute inset-0 bg-black/30"></div>
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
+              {/* Event Header with Image */}
+              <div className="relative overflow-hidden">
+                <div className="w-full h-0 pb-[43.4%] relative">
+                  <img
+                    src={`/images/${event.image}`}
+                    alt={`${event.category} event`}
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black/30"></div>
+                  <div className="absolute top-4 left-4 z-10">
                     <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(event.category)} bg-white`}>
                       {event.category}
                     </span>
