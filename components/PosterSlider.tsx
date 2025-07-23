@@ -4,15 +4,13 @@ import Image from 'next/image';
 const PosterSlider = () => {
   
   const posters = [
-    "/images/events/ai.jpg",
-    "/images/workshop/workshop2.jpg",
-    "/images/workshop/workshop1.jpg",
+    "/images/events/cover.jpg",
     "/images/events/trea.jpg",
-    "/images/events/esc.jpg",
-    "/images/events/pubg (Copy).jpg",
+    "/images/events/ESC.jpg",
+    "/images/events/pubg.jpg",
     "/images/events/EF.jpg",
     "/images/events/FIREFREE.jpg",
-    "/images/events/idea.jpg",
+    "/images/events/IDEA.jpg",
     "/images/events/debu.jpg",
     "/images/events/typin.jpg"
   ];
