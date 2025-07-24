@@ -5,6 +5,8 @@ const PosterSlider = () => {
   
   const posters = [
     "/images/events/cover.jpg",
+    "/images/workshop/WORKSHOP 1.jpg",
+    "/images/workshop/WORKSHOP 2.jpg",
     "/images/events/trea.jpg",
     "/images/events/ESC.jpg",
     "/images/events/pubg.jpg",

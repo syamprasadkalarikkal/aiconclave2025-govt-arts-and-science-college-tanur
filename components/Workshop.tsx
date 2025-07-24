@@ -21,7 +21,7 @@ export default function Workshops() {
   location: "CHMKM Arts and Science College, Tanur",
   actualPrice: "₹200",
   level: "Beginner",
-  imageUrl: "/images/workshop/workshop2.jpg",
+  imageUrl: "/images/workshop/WORKSHOP 1.jpg",
   description: "Learn the full lifecycle of building an AI model from the ground up. This hands-on session covers everything from data preprocessing to model deployment, ideal for beginners eager to explore real-world AI applications.",
   highlights: [
     "Understand the complete AI model development pipeline",
@@ -61,7 +61,7 @@ export default function Workshops() {
   location: "CHMKM Arts and Science College, Tanur",
   actualPrice: "₹200",
   level: "Beginner",
-  imageUrl: "/images/workshop/workshop1.jpg",
+  imageUrl: "/images/workshop/WORKSHOP 2.jpg",
   description: "Step into the world of business-focused data analysis. This beginner-friendly session helps participants understand how to extract, clean, and explore data to uncover insights that drive real-world business decisions. Learn how to interpret trends, visualize data, and communicate findings using Python-based tools.",
   highlights: [
     "Explore how businesses use data to solve real problems",
