@@ -8,7 +8,7 @@ interface Event {
   time: string;
   location: string;
   description: string;
-  registrationLink: string;
+ 
   image: string;
   category: string;
   price: string;
@@ -33,7 +33,7 @@ export default function EventsPage() {
       time: "11:00 AM",
       location: "annouced later",
       description: "Pitch your groundbreaking startup idea in 3 minutes to a panel of judges.Creativity and clarity win the game!",
-      registrationLink: "https://forms.gle/xrSmyp5FkyinMzSA6",
+      
       image: "/events/IDEA.jpg",
       category: "Competition",
       price: "₹200",
@@ -50,7 +50,7 @@ export default function EventsPage() {
       time: "09:00 AM",
       location: "Entire Campus",
       description: "Solve clues and race against time to uncover hidden treasures around the campus. Team up for fun!",
-      registrationLink: "https://forms.gle/wimVYdLUuvGR6rjLA",
+     
       image: "/events/trea.jpg",
       category: "Entertainment",
       price: "₹200",
@@ -67,7 +67,7 @@ export default function EventsPage() {
       time: "4:30 PM ",
       location: "anounced later",
       description: "Trapped in a themed room! Solve puzzles, unlock clues, and escape before time runs out. 15 min per group.",
-      registrationLink: "https://forms.gle/i2nGSfQs3DUsGgzg8",
+      
       image: "/events/ESC.jpg",
       category: "Adventure",
       price: "₹200",
@@ -84,7 +84,7 @@ export default function EventsPage() {
       time: "11:30 Am",
       location: "Computer Lab ",
       description: "Compete to show off your typing speed and accuracy! Bring your keyboard skills to the next level.",
-      registrationLink: "https://forms.gle/kHqeGLKgubsFjq2f8",
+      
       image: "/events/typin.jpg",
       category: "Technical",
       price: "₹50",
@@ -101,7 +101,7 @@ export default function EventsPage() {
       time: "11:00 AM ",
       location: "Computer Lab",
       description: "Fix bugs in tricky C programs in record time. The fastest and cleanest code wins!",
-      registrationLink: "https://forms.gle/yWrCMZ6ZbvwA8Eqv9",
+      
       image: "/events/debu.jpg",
       category: "Technical",
       price: "₹50",
@@ -118,7 +118,7 @@ export default function EventsPage() {
       time: "12:00 PM ",
       location: "Anouced later",
       description: "Play competitive FIFA matches on PS5! Show off your dribbling, passing, and scoring skills.",
-      registrationLink: "https://forms.gle/QcW2j6Ubof5wxScw9",
+      
       image: "/events/EF.jpg",
       category: "Gaming",
       price: "₹50",
@@ -137,7 +137,7 @@ export default function EventsPage() {
       time: "12:00 PM",
       location: "Anounced later",
       description: "Form your squad and drop into the battleground. Only one squad will survive and win the prize!",
-      registrationLink: "https://forms.gle/JmdAZSF2m5Kdp1bEA",
+      
       image: "/events/pubg.jpg",
       category: "Gaming",
       price: "₹200",
@@ -156,7 +156,7 @@ export default function EventsPage() {
       time: "11:30 AM",
       location: "anounced later",
       description: "Step into the ultimate battleground with your squad in this intense 4v4 Free Fire Room Knockout Tournament!",
-      registrationLink: "https://forms.gle/J4xgF2RTUPe4emE37",
+      
       image: "/events/FIREFREE.jpg",
       category: "Adventure",
       price: "₹200",
@@ -175,9 +175,7 @@ export default function EventsPage() {
     window.history.back();
   };
 
-  const handleRegister = (registrationLink: string): void => {
-    window.open(registrationLink, '_blank');
-  };
+  
 
   const getCategoryColor = (category: string): string => {
     const colors: Record<string, string> = {
@@ -278,10 +276,10 @@ export default function EventsPage() {
                       {event.price}
                     </div>
                     <button
-                      onClick={() => handleRegister(event.registrationLink)}
-                      className="bg-indigo-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 group"
+                      
+                      className="bg-red-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 group"
                     >
-                      <span>Register</span>
+                      <span>Registeration closed</span>
                       <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
                   </div>

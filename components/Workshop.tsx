@@ -85,7 +85,7 @@ export default function Workshops() {
     "Visualize trends and insights using Pandas, Matplotlib, and Seaborn",
     "Present clear, data-driven insights to a non-technical audience"
   ],
-  slotsFull: false
+  slotsFull: true
 }
 
   ];
